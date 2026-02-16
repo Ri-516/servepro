@@ -798,9 +798,9 @@ select:focus {
 
 .mainmenu-area .right .title-box h3 {
     color: #1F3365;
-    font-size: 22px;
-    font-weight: 400;
-    font-family: 'Satisfy', cursive;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
 }
 
 
