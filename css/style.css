@@ -1145,7 +1145,7 @@ select:focus {
 =============================================
 ***/
 .special-services-area {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 40px;
 }
 
@@ -1780,7 +1780,7 @@ select:focus {
 .about-us-area .right-content {}
 
 .about-us-area .right-content .single-item {
-    border: 1px solid #ebf8ff;
+    border: 1px solid #b2ddf4;
     margin-bottom: 30px;
     border-radius: 3px;
     display: block;
@@ -1807,6 +1807,15 @@ select:focus {
     font-size: 10pt;
     line-height: 1.5;
     color: #1F3365;
+}
+
+.about-us-area .right-content .single-item:hover{
+    
+  border-color: #1f3c88;                 /* stronger border color */
+  box-shadow: 0 10px 25px rgba(31, 60, 136, 0.15);  /* soft shadow */
+  transform: translateY(-6px);           /* lift effect */
+  transition: all 0.25s ease;
+
 }
 
 /*** 
@@ -2398,6 +2407,15 @@ select:focus {
     max-width: 260px;
     margin: 0 auto;
     height: 185px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  will-change: transform;
+}
+
+/* hover effect of other services carousal */
+.other-service-slider .owl-carousel .item:hover {
+     transform: scale(1.02) translateY(-4px);  /* subtle zoom + little lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Custom controls (arrows + dots) */
@@ -5681,3 +5699,10 @@ select:focus {
 .single-service-card {
     flex-direction: none; /* or column */
   }
+
+  /* other services carousal */
+  .card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
